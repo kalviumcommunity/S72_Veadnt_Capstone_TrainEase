@@ -3,20 +3,26 @@ const mongoose = require('mongoose');
 const trainerSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: true
+    required: true,
+    trim: true,
   },
-  email: {
+  expertise: {
     type: String,
     required: true,
-    unique: true
+    trim: true,
   },
-  specialization: {
+  experience: {
+    type: Number,
+    required: true,
+    min: 0,
+  },
+  image: {
     type: String,
-    required: true
+    required: true,
+    trim: true,
   },
-  profileImage: {
-    type: String
-  }
+}, {
+  timestamps: true
 });
 
 const Trainer = mongoose.model('Trainer', trainerSchema);
