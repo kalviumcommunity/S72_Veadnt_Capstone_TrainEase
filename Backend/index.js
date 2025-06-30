@@ -27,6 +27,11 @@ connectDB();
 const apiRoutes = require('./routes/api');
 app.use('/api', apiRoutes);
 
+// ✅ Add this route to confirm deployment
+app.get('/', (req, res) => {
+  res.send('Trainease backend deployed successfully 🚀');
+});
+
 // Start server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
