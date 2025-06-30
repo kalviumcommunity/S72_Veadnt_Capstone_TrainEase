@@ -1,0 +1,20 @@
+meta {
+  name: post video
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost:5000/api/videos
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title": "Evening Yoga Routine",
+    "url": "https://youtube.com/watch?v=xyz123",
+    "trainer": "6857eb25a669ba123f471b8b"
+  }
+  
+}

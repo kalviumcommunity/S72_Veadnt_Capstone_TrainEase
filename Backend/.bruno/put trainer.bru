@@ -1,0 +1,21 @@
+meta {
+  name: put trainer
+  type: http
+  seq: 8
+}
+
+put {
+  url: http://localhost:5000/api/trainers/6857ca9bee19bf53939cf1cc
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "devasnh",
+    "expertise": "HIIT & Strength",
+    "experience": 6,
+    "image": "https://example.com/trainer.jpg"
+  }
+  
+}

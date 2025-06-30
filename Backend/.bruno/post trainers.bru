@@ -1,0 +1,25 @@
+meta {
+  name: post trainers
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:5000/api/trainers
+  body: json
+  auth: inherit
+}
+
+headers {
+  : 
+}
+
+body:json {
+  {
+    "name": "Ravi Sharma",
+    "expertise": "Bodybuilding",
+    "experience": 5,
+    "image": "https://example.com/ravi.jpg"
+  }
+  
+}
