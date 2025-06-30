@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Trainease Backend",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

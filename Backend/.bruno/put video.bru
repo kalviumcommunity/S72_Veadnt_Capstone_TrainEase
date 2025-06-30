@@ -1,0 +1,20 @@
+meta {
+  name: put video
+  type: http
+  seq: 10
+}
+
+put {
+  url: http://localhost:5000/api/videos/6857ca9bee19bf53939cf1d5
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title": "Updated Yoga Video",
+    "url": "https://youtube.com/watch?v=updated123",
+    "trainer": "6857ca9bee19bf53939cf1cb"
+  }
+  
+}
